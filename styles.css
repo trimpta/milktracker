@@ -1,0 +1,88 @@
+:root {
+    --bg-color: #7df0f2;
+    --nav-bg-color: #3fc6d7;
+    --text-color: #ff2a04;
+    --button-color: #dee0ae;
+}
+
+/* trimpta is gay :) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.navbar {
+    background-color: var(--nav-bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0 20px;
+    background-color: var(--button-color);
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: large;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.milktracker {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.milktracker button {
+    background-color: bisque;
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input button {
+    background-color: #ff2a04;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.input .amount {
+    color: var(--text-color);
+}
